@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark">
+            <a class="navbar-brand text-light" href="#">Formuário RD</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="p-4">
+            <div class="container border border-primary rounded p-4">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <label for="crm-medico">CRM</label>
+                            <input class="form-control" type="text" id="crm-medico" name="crm-medico"
+                                placeholder="CRM do médico">
+                        </div>
+                        <div class="form-group col-8">
+                            <label for="nomeMedico">Nome do médico:</label>
+                            <input class="form-control" type="text" id="nomeMedico" name="nomeMedico"
+                                placeholder="Nome do médico">
+                        </div>
+                        
+                        
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="data">Data</label>
+                        <input class="form-control" type="text" id="data" name="data"
+                            placeholder="Digite a data">
+                    </div>
+                    <div class="col-6">
+                        <label for="qtdRemedio">Quantidade</label>
+                        <select class="form-control" name="qtdRemedio" id="qtdRemedio">
+                            <option value="" disabled selected>QTD:</option>
+                            <option value="qtd-1">1</option>
+                            <option value="qtd-2">2</option>
+                            <option value="qtd-3">3</option>
+                            <option value="qtd-4">4</option>
+                            <option value="qtd-5">5</option>
+                            <option value="qtd-6">6</option>
+                            <option value="qtd-7">7</option>
+                            <option value="qtd-8">8</option>
+                            <option value="qtd-9">9</option>
+                            <option value="qtd-10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="nome-paciente">Nome Paciente:</label>
+                            <input class="form-control" type="text" id="nome-paciente" name="nome-paciente"
+                                placeholder="Nome Paciente">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="cpfPaciente">CPF</label>
+                            <input class="form-control" type="text" id="cpfPaciente" name="cpfPaciente"
+                                placeholder="Digite seu CPF" maxlength="11">
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <label for="nome-paciente">Data de nascimento</label>
+                            <input class="form-control" type="text" id="nome-paciente" name="nome-paciente"
+                                placeholder="Nome Paciente">
+                        </div>
+                        <div class="col-4">
+                            <label for="qtdRemedio">Sexo:</label>
+                            <select class="form-control" name="qtdRemedio" id="qtdRemedio">
+                                <option value="" disabled selected>Sexo:</option>
+                                <option value="sexoMasculino">Masculino</option>
+                                <option value="sexoFemino">Femino</option>
+                                <option value="sexoOutros">outros</option>
+                                
+                            </select>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cadastroEnviado" >
+                            Cadastrar</button>
+                    </div>
+
+                </form>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <div id="cadastroEnviado" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Cadastro enviado!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
